@@ -3,8 +3,8 @@ package main
 import "testing"
 
 func TestRepeat(t *testing.T) {
-	got := Repeat("a")
-	expected := "aaaaa"
+	got := Repeat("a", -2)
+	expected := ""
 
 	if got != expected {
 		t.Errorf("Got: %q , expected: %q. ", got, expected)
@@ -35,6 +35,6 @@ func TestRepeat(t *testing.T) {
 
 func BenchmarkRepeat(b *testing.B) {
 	for b.Loop() {
-		Repeat("a")
+		Repeat("a", 5)
 	}
 }
