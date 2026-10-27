@@ -1,8 +1,12 @@
 # Learn Go with Tests
 
-This repository documents my journey learning Go by following [Learn Go with Tests](https://quii.gitbook.io/learn-go-with-tests).
+This repository documents my journey revisiting Go and learning test-driven development through [Learn Go with Tests](https://quii.gitbook.io/learn-go-with-tests).
 
-My goal is to build a strong foundation in Go while learning test-driven development (TDD), writing idiomatic code, and understanding good software engineering practices.
+I'm comfortable with Go fundamentals, but I want to strengthen my understanding of testing, refactoring, and the practices needed to build reliable Go projects.
+
+I'm working through the book chapter by chapter, implementing the exercises and using Git to track meaningful milestones.
+
+My next goal is to apply these skills to my own Go project and begin contributing to open-source projects.
 
 ## What I'm learning
 
