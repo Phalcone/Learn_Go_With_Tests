@@ -3,10 +3,25 @@ package main
 import "testing"
 
 func TestHello(t *testing.T) {
-	got := Hello()
-	want := "Hello, World!"
+	t.Run("saying hello to people", func(t *testing.T) {
+		got := Hello("Akshaj")
+		want := "Hello, Akshaj"
+
+		assertCorrectMessage(t, got, want)
+	})
+	t.Run("say 'Hello, World' when an empty string is supplied", func(t *testing.T) {
+		got := Hello("")
+		want := "Hello, World!"
+
+		assertCorrectMessage(t, got, want)
+	})
+}
+
+func assertCorrectMessage(t testing.TB, got, want string) {
+	t.Helper() /* Tells the test that thiss is only a helper function and causes failiure of test to be reported in line 10
+	where assert function is called. Without it, failure is reported in line 26. */
 
 	if got != want {
-		t.Errorf("Got %q, but wanted %q. ", got, want)
+		t.Errorf("got %q want %q", got, want)
 	}
 }
